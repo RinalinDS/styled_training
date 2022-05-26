@@ -1,12 +1,19 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
 
-function App() {
+const AppWrapper = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  padding: 2rem;
+`
+
+export const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <AppWrapper>
+      TRULALA
+    </AppWrapper>
   );
 }
 
-export default App;
+
