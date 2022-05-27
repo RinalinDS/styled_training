@@ -16,15 +16,14 @@ export const App = () => {
   return (
     <AppWrapper>
       <Flex justify={'center'}>
-        <Title color={'green'} fontSize={'24px'}>
+        <Title fontSize={'24px'}>
           Console from RinalinDS
         </Title>
       </Flex>
-      <Flex direction={'column'}>
+      <Flex direction={'column'} margin={'10px 0'}>
         <Console/>
-        <Button outlined color={'green'} align={'flex-end'}>Send</Button>
+        <Button align={'flex-end'}>Send</Button>
       </Flex>
-
     </AppWrapper>
   );
 }

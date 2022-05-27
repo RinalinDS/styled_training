@@ -10,8 +10,8 @@ const rotateAnimation = keyframes`
     transform: rotateZ(360deg);
   }
 `
-
-const StyledButton = styled.button<PropsTypes.ButtonType>`
+// attrs - можно задать пропсы по умолчанию, чтобы не передавать их лишний раз из компоненты
+const StyledButton = styled.button.attrs(props => ({outlined: true}))<PropsTypes.ButtonType>`
   border: none;
   min-height: 50px;
   min-width: 120px;
@@ -31,13 +31,13 @@ const StyledButton = styled.button<PropsTypes.ButtonType>`
 
   align-self: ${props => props.align || 'stretch'};
   ${props => props.primary && css<PropsTypes.ButtonType>`
-    color: ${(props) => props.color || 'white'};
+    color: ${props => props.color || props.theme.colors.primary};
     background: ${props => props.background || 'white'};`}
 
   ${props => props.outlined && css<PropsTypes.ButtonType>`
     // без отдельной типизации функции css выдавало ошибку на пропсы, 
     // TODO сократить как-то , чтобы не везде писать типизацию
-    color: ${(props) => props.color || 'white'};
+    color: ${props => props.color || props.theme.colors.primary};
     border: 1px solid ${props => props.color};
     background: transparent;
   `}

@@ -1,9 +1,9 @@
 import React from 'react';
 
 export type TitleType = {
-  children: React.ReactNode
-  color: string
-  fontSize: string
+  children?: React.ReactNode
+  color?: string
+  fontSize?: string
 }
 
 export type FlexType = {
@@ -26,4 +26,9 @@ export type ButtonType = {
   color?: string
   background?: string
   outlined?: boolean
+}
+
+export type LineType = {
+  children?: React.ReactNode
+  color?: string
 }
