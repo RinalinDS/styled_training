@@ -1,6 +1,6 @@
 # Hi Guys
 
-[Now you are in repo created by me.](https://github.com/RinalinDS)
+[Now you are in repo created by this man on screen.](https://github.com/RinalinDS)
 
 ### This small repo was created to get some experience with styled-components library :
 

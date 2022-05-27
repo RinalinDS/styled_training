@@ -17,3 +17,13 @@ export type FlexType = {
 export type ConsoleType = {
   color?: string
 }
+
+
+export type ButtonType = {
+  children?: React.ReactNode
+  align?: string
+  primary?: boolean
+  color?: string
+  background?: string
+  outlined?: boolean
+}
