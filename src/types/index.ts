@@ -1,3 +1,6 @@
-export type {
-  TitlePropsTypes
-} from './PropsTypes'
+import * as PropsTypes from './PropsTypes'
+
+
+export {
+  PropsTypes
+}

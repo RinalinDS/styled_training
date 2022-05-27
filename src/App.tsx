@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {Title} from './components/Title';
+import {Flex} from './components/Flex';
+import {Console} from './components/Console';
 
 const AppWrapper = styled.div`
   width: 100%;
@@ -12,9 +14,15 @@ const AppWrapper = styled.div`
 export const App = () => {
   return (
     <AppWrapper>
-      <Title color={'green'}>
-        TRULALA
-      </Title>
+      <Flex justify={'center'}>
+        <Title color={'green'} fontSize={'24px'}>
+          Console from RinalinDS
+        </Title>
+      </Flex>
+      <Flex justify={'center'}>
+        <Console/>
+      </Flex>
+
     </AppWrapper>
   );
 }
